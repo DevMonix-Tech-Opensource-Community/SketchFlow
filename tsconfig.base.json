@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@sketchflow/core": ["packages/core/src/index.ts"],
+      "@sketchflow/sketch": ["packages/sketch/src/index.ts"],
+      "@sketchflow/layout": ["packages/layout/src/index.ts"],
+      "@sketchflow/codegen": ["packages/codegen/src/index.ts"],
+      "@sketchflow/adapter-react": ["packages/adapters/react/src/index.ts"],
+      "@sketchflow/adapter-next": ["packages/adapters/next/src/index.ts"],
+      "@sketchflow/adapter-solid": ["packages/adapters/solid/src/index.ts"],
+      "@sketchflow/adapter-preact": ["packages/adapters/preact/src/index.ts"],
+      "@sketchflow/adapter-vue": ["packages/adapters/vue/src/index.ts"],
+      "@sketchflow/adapter-svelte": ["packages/adapters/svelte/src/index.ts"],
+      "@sketchflow/adapter-angular": ["packages/adapters/angular/src/index.ts"],
+      "@sketchflow/adapter-three": ["packages/adapters/three/src/index.ts"],
+      "@sketchflow/cli": ["packages/cli/src/index.ts"]
+    }
+  },
+  "exclude": ["dist", "node_modules", "**/*.test.ts"]
+}

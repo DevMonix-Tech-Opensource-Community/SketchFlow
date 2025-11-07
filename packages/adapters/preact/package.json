@@ -1,0 +1,29 @@
+{
+  "name": "@sketchflow/adapter-preact",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@sketchflow/core": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "vitest": "^2.1.3"
+  }
+}

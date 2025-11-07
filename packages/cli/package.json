@@ -1,0 +1,37 @@
+{
+  "name": "@sketchflow/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "bin": {
+    "sketchflow": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@sketchflow/adapter-react": "workspace:*",
+    "@sketchflow/adapter-next": "workspace:*",
+    "@sketchflow/adapter-solid": "workspace:*",
+    "@sketchflow/adapter-vue": "workspace:*",
+    "@sketchflow/adapter-svelte": "workspace:*",
+    "@sketchflow/adapter-angular": "workspace:*",
+    "@sketchflow/adapter-three": "workspace:*",
+    "@sketchflow/adapter-preact": "workspace:*",
+    "@sketchflow/codegen": "workspace:*",
+    "@sketchflow/layout": "workspace:*",
+    "@sketchflow/sketch": "workspace:*",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "vitest": "^2.1.3",
+    "@types/commander": "^2.12.5"
+  }
+}

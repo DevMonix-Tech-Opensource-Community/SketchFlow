@@ -1,0 +1,85 @@
+{
+  "id": "doc-1",
+  "name": "Sample Document",
+  "nodes": [
+    {
+      "id": "frame-1",
+      "type": "frame",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 200
+      },
+      "children": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "layout": {
+            "x": 8,
+            "y": 12,
+            "width": 160,
+            "height": 24
+          },
+          "props": {
+            "text": "Hello CLI"
+          },
+          "children": []
+        },
+        {
+          "id": "image-1",
+          "type": "image",
+          "layout": {
+            "x": 12,
+            "y": 48,
+            "width": 96,
+            "height": 96
+          },
+          "props": {
+            "src": "hero.png",
+            "alt": "Hero"
+          },
+          "children": []
+        },
+        {
+          "id": "group-1",
+          "type": "group",
+          "layout": {
+            "x": 180,
+            "y": 12,
+            "width": 120,
+            "height": 120
+          },
+          "children": [
+            {
+              "id": "text-2",
+              "type": "text",
+              "layout": {
+                "x": 0,
+                "y": 0,
+                "width": 110,
+                "height": 24
+              },
+              "props": {
+                "text": "Nested label"
+              },
+              "children": []
+            },
+            {
+              "id": "component-1",
+              "type": "component",
+              "name": "Card",
+              "layout": {
+                "x": 0,
+                "y": 40,
+                "width": 120,
+                "height": 72
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Sketchflow Generate": {
+    "prefix": "sketchflow-generate",
+    "description": "Run sketchflow generate with common options",
+    "body": [
+      "pnpm --filter @sketchflow/cli exec sketchflow generate \\",
+      "  --input ./samples/sample.json \\",
+      "  --framework ${1:react} \\",
+      "  --layout ${2:passthrough} \\",
+      "  --adapter-option ${3:key=value} \\",
+      "  --out ${4:output}"
+    ]
+  }
+}

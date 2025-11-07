@@ -1,0 +1,28 @@
+{
+  "name": "sketchflow",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Draw-to-code framework that converts free-form UI sketches into production-ready frontends across modern web stacks.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">=18.19.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "packages/*",
+    "packages/adapters/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.7.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.11",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "include": ["src"],
+  "exclude": ["dist"],
+  "references": [
+    { "path": "../codegen" },
+    { "path": "../adapters/react" },
+    { "path": "../adapters/next" },
+    { "path": "../adapters/solid" },
+    { "path": "../adapters/vue" },
+    { "path": "../adapters/svelte" },
+    { "path": "../adapters/angular" },
+    { "path": "../adapters/three" },
+    { "path": "../adapters/preact" },
+    { "path": "../sketch" }
+  ]
+}
